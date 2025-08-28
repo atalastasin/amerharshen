@@ -29,3 +29,26 @@
     <% end %>
   </tbody>
 </table>
+
+<h3>List of Teachers:</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Specilization</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @department.teachers.each do |teacher| %>
+      <tr>
+        <td><%= teacher.name%></td>
+        <td><%= teacher.email%></td>
+        <td><%= teacher.specialization%></td>
+        <td><%= teacher.status %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
